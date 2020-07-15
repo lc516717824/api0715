@@ -1,0 +1,55 @@
+{
+  "test_data":
+[
+  [
+    {
+      "accesstoken": "1",
+      "title": "",
+      "tab": "",
+      "content": ""
+    },
+    401,
+    "错误的accessToken"
+  ],
+  [
+    {
+      "accesstoken": "1bc398ce-0ca6-4392-a125-9246a05454f8",
+      "title": "11111111111111",
+      "tab": "",
+      "content": ""
+    },
+    400,
+    "必须选择一个版块"
+  ],
+  [
+    {
+      "accesstoken": "1bc398ce-0ca6-4392-a125-9246a05454f8",
+      "title": "",
+      "tab": "",
+      "content": ""
+    },
+    400,
+    "标题不能为空"
+  ],
+  [
+    {
+      "accesstoken": "1bc398ce-0ca6-4392-a125-9246a05454f8",
+      "title": "1",
+      "tab": "",
+      "content": ""
+    },
+    400,
+    "标题字数太多或太少"
+  ],
+  [
+    {
+      "accesstoken": "1bc398ce-0ca6-4392-a125-9246a05454f8",
+      "title": "helloworld",
+      "tab": "ask",
+      "content": ""
+    },
+    400,
+    "内容不可为空"
+  ]
+]
+}
