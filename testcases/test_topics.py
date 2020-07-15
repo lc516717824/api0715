@@ -38,7 +38,7 @@ def test_topic_detail():
                  "tab": "ask",
                  "content": "你好~欢迎来到新世界~"}
     # 返回 topic_id 的值
-    topic_id = common.create_topic(post_data)
+    topic_id = common.create_topic(post_data).json()['topic_id']
     # 主题详情 get
     # url = "http://49.233.108.117:3000/api/v1/topic/"+topic_id
     res = common.get_topic_detail(topic_id)
@@ -57,7 +57,7 @@ def test_topic_update():
                  "tab": "ask",
                  "content": "你好~欢迎来到新世界~"}
     # 返回 topic_id 的值
-    topic_id = common.create_topic(post_data)
+    topic_id = common.create_topic(post_data).json()['topic_id']
     # 编辑话题
     url = 'http://49.233.108.117:3000/api/v1/topics/update'
     update_data = {"accesstoken": common.get_token(),
