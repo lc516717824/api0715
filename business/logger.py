@@ -8,7 +8,7 @@ loger.setLevel(logging.DEBUG)
 format = logging.Formatter('[%(asctime)s] [%(levelname)s] [%(funcName)s] %(message)s')
 
 # 文件处理器
-fl = logging.FileHandler(filename='C:/Users/51671/PycharmProjects/untitled1/logs/cnodeapi.log',mode='a')
+fl = logging.FileHandler(filename='logs/cnodeapi.log',mode='a')
 fl.setLevel(logging.DEBUG)
 fl.setFormatter(format)
 # 控制台输出处理器
