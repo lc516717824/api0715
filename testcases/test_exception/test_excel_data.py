@@ -11,7 +11,7 @@ def test_create_topic(url,http,topic_data,code,msg):
      # 发布话题
     if http == 'post':
         print(topic_data)
-        res = do_request(url=url,http=http,data=topic_data)
+        res = do_request(url=url,http=http,data=json.loads(topic_data))
         # res = requests.post(url=url,data=topic_data)
         # 发送请求 获得json 数据
         jsondata = res.json()

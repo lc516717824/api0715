@@ -47,3 +47,11 @@
 [2020-07-14 18:39:49,257] [DEBUG] [do_request] {'success': False, 'error_msg': '错误的accessToken'} 401 0.0592s
 [2020-07-14 18:39:49,257] [DEBUG] [do_request] post http://49.233.108.117:3000/api/v1/topics data: {"accesstoken":"1bc398ce-0ca6-4392-a125-9246a05454f8","title":"11111111111111","tab":"","content":""}
 [2020-07-14 18:39:49,321] [DEBUG] [do_request] {'success': False, 'error_msg': '错误的accessToken'} 401 0.059402s
+[2020-07-15 15:58:39,523] [DEBUG] [do_request] post http://49.233.108.117:3000/api/v1/topics data: {'accesstoken': '1', 'title': '', 'tab': '', 'content': ''}
+[2020-07-15 15:58:39,643] [DEBUG] [do_request] {'success': False, 'error_msg': '错误的accessToken'} 401 0.110849s
+[2020-07-15 15:58:39,646] [DEBUG] [do_request] post http://49.233.108.117:3000/api/v1/topics data: {'accesstoken': '1bc398ce-0ca6-4392-a125-9246a05454f8', 'title': '11', 'tab': '', 'content': '11'}
+[2020-07-15 15:58:39,758] [DEBUG] [do_request] {'success': False, 'error_msg': '标题字数太多或太少'} 400 0.110043s
+[2020-07-15 15:59:19,282] [DEBUG] [do_request] post http://49.233.108.117:3000/api/v1/topics data: {'accesstoken': '1', 'title': '', 'tab': '', 'content': ''}
+[2020-07-15 15:59:19,407] [DEBUG] [do_request] {'success': False, 'error_msg': '错误的accessToken'} 401 0.12216s
+[2020-07-15 15:59:19,410] [DEBUG] [do_request] post http://49.233.108.117:3000/api/v1/topics data: {'accesstoken': '1bc398ce-0ca6-4392-a125-9246a05454f8', 'title': '11', 'tab': 'ask', 'content': '11'}
+[2020-07-15 15:59:19,525] [DEBUG] [do_request] {'success': False, 'error_msg': '标题字数太多或太少'} 400 0.112073s
